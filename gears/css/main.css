@@ -60,6 +60,9 @@ input {
     box-shadow: 0 1px 2px #00000088;
     transition: border .4s, box-shadow .4s;
 }
+input[type='text'] {
+    box-sizing: content-box;
+}
 input:hover {
     border-color: #ffffff44;
 }
@@ -87,6 +90,8 @@ pre {
 }
 .input-item label {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: .5em;
     gap: 10px;
 }
